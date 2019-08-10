@@ -1,1 +1,478 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Tomatoes";
+  src: url("../fonts/Tomatoes-O8L8.ttf");
+}
+
+@-webkit-keyframes shake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* show a hand cursor on hover; some argue that we
+    should keep the default arrow cursor for buttons */
+  cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans";
+  letter-spacing: 0.15rem;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.background {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #061A39), to(#33DCC3));
+  background: linear-gradient(#061A39 15%, #33DCC3 100%);
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 64%;
+}
+
+.navbar {
+  position: absolute;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 7.5%;
+  width: 64%;
+}
+
+.navbar .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar .logo::after {
+  content: "Julia Boiko Clinic";
+  font-size: 1.4rem;
+  font-family: "Tomatoes";
+  color: #33DCC3;
+}
+
+.navbar .logo .logotype {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 15rem;
+}
+
+.navbar .sm-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0;
+}
+
+.navbar .sm-list li {
+  padding: 0 2rem;
+}
+
+.navbar .sm-list li a {
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  font-size: 2rem;
+  color: #33DCC3;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.navbar .sm-list li a:hover {
+  color: #0088a9;
+}
+
+.navbar .telephone {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navbar .telephone:hover .tel {
+  color: #ed6a5a;
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.navbar .telephone .tel {
+  font-size: 2.5rem;
+  color: lightgreen;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.navbar .telephone a {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #33DCC3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  letter-spacing: 0.25rem;
+}
+
+header {
+  height: 0;
+}
+
+.menu-nav {
+  visibility: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.menu-nav.show {
+  visibility: visible;
+}
+
+.menu-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(51, 220, 195, 0.6);
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.menu-nav-list.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-nav,
+.menu-nav-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 3rem;
+  top: 4.3rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  z-index: 3;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  -webkit-transform: rotate(-45deg) translate(7px, -3px);
+          transform: rotate(-45deg) translate(7px, -3px);
+}
+
+.menu-btn .btn-line {
+  background-color: #28965a;
+  height: 0.34rem;
+  width: 3.5rem;
+  margin: 0.5rem;
+}
+
+.menu-nav-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.menu-nav-list .menu-nav-item {
+  -webkit-transform: translate3d(600px, 0, 0);
+          transform: translate3d(600px, 0, 0);
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.menu-nav-list .menu-nav-item.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-nav-list .menu-nav-item .menu-nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 3rem 0;
+  color: #f1f4ee;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  line-height: 1.5;
+  letter-spacing: 0.2rem;
+}
+
+.menu-nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+}
+
+.menu-nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.menu-nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.375s;
+          transition-delay: 0.375s;
+}
+
+.menu-nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.menu-nav-item:nth-child(5) {
+  -webkit-transition-delay: 0.625s;
+          transition-delay: 0.625s;
+}
+
+.menu-nav {
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+  width: 36%;
+}
+
+.background-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-2-item {
+  background: url("../img/header_1.jpg");
+  background-size: cover;
+  background-position: -15rem 0rem;
+  background-repeat: no-repeat;
+  width: 36%;
+}
+
+.first-page {
+  width: 64%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 15rem;
+}
+
+.first-page .doctor-name,
+.first-page .doctor-description {
+  color: #F2F3F4;
+  font-size: 2.5rem;
+  font-weight: 500;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 1rem 0rem;
+  margin-left: 15rem;
+}
+
+.first-page .doctor-description {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.first-page .vertical-line {
+  width: 130%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: 0.15rem;
+  background: #9b9b9c;
+  opacity: 0.7;
+  margin: 3rem 0rem;
+}
+
+.first-page .slogan {
+  color: #F2F3F4;
+  font-size: 4rem;
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0;
+  margin-left: 15rem;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.first-page .btn-maa {
+  color: #F2F3F4;
+  margin-top: 1rem;
+  background: #DE4387;
+  border-radius: 4rem;
+  padding: 1.5rem;
+  outline: none;
+  text-transform: none;
+  margin-left: 15rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.first-page .btn-maa .make-an-appointment {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

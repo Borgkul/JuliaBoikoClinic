@@ -1,1 +1,332 @@
 @import "config";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans";
+    letter-spacing: 0.15rem;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.background {
+    background: linear-gradient($primary-color 15%, $button-color 100%);
+    height: 90vh;
+    display: flex;
+    width: 64%;
+}
+
+
+
+.navbar {
+    position: absolute;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 7.5%;
+    width: 64%;
+
+    .logo {
+        display: inline-flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        flex-wrap: wrap;
+
+        &::after {
+            content: "Julia Boiko Clinic";
+            font-size: 1.4rem;
+            font-family: "Tomatoes";
+            color: $button-color;
+
+        }
+
+
+        .logotype {
+            display: inline-flex;
+            width: 15rem;
+
+        }
+    }
+
+    .sm-list {
+        display: inline-flex;
+        justify-content: start;
+        padding: 0;
+
+        li {
+            padding: 0 2rem;
+
+            a {
+                transition: $transition;
+                font-size: 2rem;
+                color: $button-color;
+                justify-self: center;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+
+    .telephone {
+        display: inline-flex;
+        align-items: center;
+        justify-content: end;
+
+        &:hover {
+            .tel {
+                color: #ed6a5a;
+                animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+                transform: translate3d(0, 0, 0);
+                backface-visibility: hidden;
+                perspective: 1000px;
+            }
+        }
+
+        .tel {
+            font-size: 2.5rem;
+            color: lightgreen;
+            padding-right: 2.5rem;
+            cursor: pointer;
+            transition: $transition;
+
+
+        }
+
+        a {
+            font-size: 2rem;
+            font-weight: 500;
+            color: $button-color;
+            align-self: center;
+            letter-spacing: 0.25rem;
+        }
+    }
+
+
+
+
+}
+
+header {
+    height: 0;
+}
+
+.menu-nav {
+    visibility: hidden;
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+    &.show {
+        visibility: visible;
+    }
+}
+
+.menu-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(51, 220, 195, 0.6);
+    transform: translate3d(0, -100%, 0);
+    transition: $transition;
+
+
+    &.show {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.menu-nav,
+.menu-nav-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu-btn {
+    position: absolute;
+    display: flex;
+    right: 3rem;
+    top: 4.3rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 3;
+    transition: $transition;
+
+    &.close {
+        transform: rotate(180deg);
+
+        .btn-line:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .btn-line:nth-child(2) {
+            transform: rotate(-45deg) translate(7px, -3px);
+        }
+    }
+
+    .btn-line {
+        background-color: #28965a;
+        height: 0.34rem;
+        width: 3.5rem;
+        margin: 0.5rem;
+    }
+}
+
+
+
+.menu-nav-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transition: $transition;
+
+    .menu-nav-item {
+        transform: translate3d(600px, 0, 0);
+        transition: $transition;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+
+        .menu-nav-link {
+            display: inline-block;
+            position: relative;
+            font-size: 3rem;
+            text-transform: uppercase;
+            padding: 3rem 0;
+            color: #f1f4ee;
+            font-weight: 500;
+            text-decoration: none;
+            transition: $transition;
+            line-height: 1.5;
+            letter-spacing: 0.2rem;
+
+        }
+    }
+}
+
+@for $x from 1 through 5 {
+    .menu-nav-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.125s;
+    }
+}
+
+.menu-nav {
+
+    transition: $transition;
+    width: 36%;
+
+}
+
+.background-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+
+    &-item {
+        background: url('../img/header_1.jpg');
+        background-size: cover;
+        background-position: -15rem 0rem;
+        background-repeat: no-repeat;
+        width: 36%;
+    }
+
+}
+
+.first-page {
+    width: 64%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15rem;
+
+    .doctor-name,
+    .doctor-description {
+        color: #F2F3F4;
+        font-size: 2.5rem;
+        font-weight: 500;
+        align-self: flex-start;
+        margin: 1rem 0rem;
+        margin-left: 15rem;
+    }
+
+    .doctor-description {
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+
+    .vertical-line {
+        width: 130%;
+        align-self: flex-start;
+        height: 0.15rem;
+        background: #9b9b9c;
+        opacity: 0.7;
+        margin: 3rem 0rem;
+    }
+
+    .slogan {
+        color: #F2F3F4;
+        font-size: 4rem;
+        width: 100%;
+        align-self: flex-start;
+        margin: 0;
+        margin-left: 15rem;
+        transition: $transition;
+    }
+
+
+    .btn-maa {
+        color: #F2F3F4;
+        margin-top: 1rem;
+        background: $primary-btn-color;
+        border-radius: 4rem;
+        padding: 1.5rem;
+        outline: none;
+        text-transform: none;
+        margin-left: 15rem;
+        align-self: flex-start;
+        margin-top: 5rem;
+        cursor: pointer;
+
+        .make-an-appointment {
+            font-size: 2rem;
+        }
+    }
+
+
+
+}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
 @font-face {
   font-family: "Tomatoes";
   src: url("../fonts/Tomatoes-O8L8.ttf");
@@ -71,15 +73,21 @@ html {
   font-size: 10px;
 }
 
+html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Fira Sans";
-  letter-spacing: 0.15rem;
+  font-family: 'Exo 2', sans-serif;
+  letter-spacing: 0.12rem;
 }
 
 a {
   outline: none;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 
@@ -98,7 +106,7 @@ ol {
   width: 64%;
 }
 
-.navbar {
+.navbarr {
   position: absolute;
   height: auto;
   display: -webkit-box;
@@ -114,7 +122,7 @@ ol {
   width: 64%;
 }
 
-.navbar .logo {
+.navbarr .logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -131,21 +139,21 @@ ol {
       flex-wrap: wrap;
 }
 
-.navbar .logo::after {
+.navbarr .logo::after {
   content: "Julia Boiko Clinic";
   font-size: 1.4rem;
   font-family: "Tomatoes";
   color: #33DCC3;
 }
 
-.navbar .logo .logotype {
+.navbarr .logo .logotype {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 15rem;
 }
 
-.navbar .sm-list {
+.navbarr .sm-list1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -153,13 +161,14 @@ ol {
       -ms-flex-pack: start;
           justify-content: start;
   padding: 0;
+  margin: 0;
 }
 
-.navbar .sm-list li {
+.navbarr .sm-list1 li {
   padding: 0 2rem;
 }
 
-.navbar .sm-list li a {
+.navbarr .sm-list1 li a {
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
   font-size: 2rem;
@@ -168,11 +177,11 @@ ol {
       justify-self: center;
 }
 
-.navbar .sm-list li a:hover {
+.navbarr .sm-list1 li a:hover {
   color: #0088a9;
 }
 
-.navbar .telephone {
+.navbarr .telephone1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -184,7 +193,7 @@ ol {
           justify-content: end;
 }
 
-.navbar .telephone:hover .tel {
+.navbarr .telephone1:hover .tel {
   color: #ed6a5a;
   -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
           animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -196,7 +205,7 @@ ol {
           perspective: 1000px;
 }
 
-.navbar .telephone .tel {
+.navbarr .telephone1 .tel {
   font-size: 2.5rem;
   color: lightgreen;
   padding-right: 2.5rem;
@@ -205,7 +214,7 @@ ol {
   transition: all 0.6s ease 0s;
 }
 
-.navbar .telephone a {
+.navbarr .telephone1 a {
   font-size: 2rem;
   font-weight: 500;
   color: #33DCC3;
@@ -302,18 +311,21 @@ header {
 }
 
 .menu-btn.close .btn-line:nth-child(2) {
-  -webkit-transform: rotate(-45deg) translate(7px, -3px);
-          transform: rotate(-45deg) translate(7px, -3px);
+  -webkit-transform: rotate(-45deg) translate(7px, -3.2px);
+          transform: rotate(-45deg) translate(7px, -3.2px);
 }
 
 .menu-btn .btn-line {
-  background-color: #28965a;
-  height: 0.34rem;
-  width: 3.5rem;
-  margin: 0.5rem;
+  background-color: #f2f3f4;
+  height: 3.4px;
+  width: 30.5px;
+  margin: 5px;
 }
 
 .menu-nav-list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -322,6 +334,7 @@ header {
 }
 
 .menu-nav-list .menu-nav-item {
+  text-align: center;
   -webkit-transform: translate3d(600px, 0, 0);
           transform: translate3d(600px, 0, 0);
   -webkit-transition: all 0.6s ease 0s;
@@ -336,9 +349,9 @@ header {
 .menu-nav-list .menu-nav-item .menu-nav-link {
   display: inline-block;
   position: relative;
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-transform: uppercase;
-  padding: 3rem 0;
+  margin: 3rem 0;
   color: #f1f4ee;
   font-weight: 500;
   text-decoration: none;
@@ -346,6 +359,12 @@ header {
   transition: all 0.6s ease 0s;
   line-height: 1.5;
   letter-spacing: 0.2rem;
+  z-index: 3;
+}
+
+.menu-nav-list .menu-nav-item .menu-nav-link:hover {
+  font-size: 3.2rem;
+  color: #061A39;
 }
 
 .menu-nav-item:nth-child(1) {
@@ -383,21 +402,27 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 
 .background-2-item {
+  z-index: -4;
   background: url("../img/header_1.jpg");
   background-size: cover;
-  background-position: -15rem 0rem;
+  background-position: center;
   background-repeat: no-repeat;
   width: 36%;
+  height: 100vh;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .first-page {
@@ -458,11 +483,12 @@ header {
 }
 
 .first-page .btn-maa {
+  display: inline-block;
   color: #F2F3F4;
   margin-top: 1rem;
   background: #DE4387;
   border-radius: 4rem;
-  padding: 1.5rem;
+  padding: 1rem 2.3rem;
   outline: none;
   text-transform: none;
   margin-left: 15rem;
@@ -472,7 +498,1002 @@ header {
   cursor: pointer;
 }
 
+.first-page .btn-maa:hover {
+  -webkit-animation: flash 1.25s;
+          animation: flash 1.25s;
+}
+
 .first-page .btn-maa .make-an-appointment {
+  color: #fff;
+  display: block;
+  height: 100%;
   font-size: 2rem;
+  height: 3rem;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.second-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 15rem;
+}
+
+.second-page .portrait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-page .portrait::before {
+  content: '';
+  background: #9b9b9c;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  opacity: 0.25;
+  position: absolute;
+  z-index: -1;
+}
+
+.second-page .portrait img {
+  height: 50rem;
+  width: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second-page .full-description {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10%;
+}
+
+.second-page .full-description h1 {
+  margin: 15rem 0 3rem 0;
+  padding: 0 3rem 0 0;
+  font-size: 4.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-page .full-description p {
+  font-size: 1.2rem;
+}
+
+.second-page form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.appointment-page {
+  height: 100vh;
+}
+
+.jumbotron-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 15rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.jumbotron-services h1 {
+  display: inline-block;
+  margin: 0 7.5rem;
+  margin-top: 0rem;
+  padding: 0 5rem;
+  font-size: 4.5rem;
+}
+
+.jumbotron-services p {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  justify-self: flex-end;
+  margin: 0 15rem;
+  margin-bottom: 0rem;
+  font-size: 1.5rem;
+}
+
+.appointment-form {
+  background: -webkit-gradient(linear, left top, right top, from(#191A4E), color-stop(30%, #191A4E), to(#F2f3f4));
+  background: linear-gradient(90deg, #191A4E, #191A4E 30%, #F2f3f4 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  margin: 0 15rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  vertical-align: center;
+}
+
+.appointment-form .appointment-info {
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 7.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2;
+          flex: 1 2;
+  padding: 0 5rem;
+  margin-top: 5rem;
+}
+
+.appointment-form .appointment-info h1 {
+  margin-top: -0.95rem;
+  color: white;
+  font-size: 4.5rem;
+  margin-bottom: 5rem;
+}
+
+.appointment-form .appointment-info .telephone {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #6E9241;
+  font-size: 1.3rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5.5rem;
+}
+
+.appointment-form .appointment-info .telephone .tel1 {
+  margin-bottom: 1.3rem;
+}
+
+.appointment-form .appointment-info .telephone a {
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 300;
+  padding-left: 1.5rem;
+}
+
+.appointment-form #form {
+  display: -ms-grid;
+  display: grid;
+  align-self: flex-start;
+  margin: 0 7.5rem;
+  width: 50%;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 1.5rem;
+  vertical-align: center;
+  margin-top: 5rem;
+}
+
+.appointment-form #form input,
+.appointment-form #form select {
+  background: #121441;
+  border: none;
+  height: 4.3rem;
+  border-radius: 2.4rem;
+  padding-left: 2rem;
+}
+
+.appointment-form #form input option,
+.appointment-form #form select option {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #a1a7ac;
+}
+
+.appointment-form #form button {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #F2F3F4;
+  background: #DE4387;
+  border-radius: 4rem;
+  padding: 1rem 2.3rem;
+  outline: none;
+  text-transform: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  cursor: pointer;
+}
+
+.appointment-form #form select {
+  color: #a1a7ac;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  -webkit-appearance: button;
+  outline: none;
+}
+
+.appointment-form #form .form-group {
+  margin: 0;
+}
+
+.appointment-form #form .form-control {
+  color: #a1a7ac;
+  font-size: 1.2rem;
+}
+
+.appointment-form #form textarea {
+  padding-left: 2rem;
+  padding-top: 1.5rem;
+  border-radius: 2.4rem;
+  background: #121441;
+  border: none;
+}
+
+.appointment-form #form ::-webkit-input-placeholder {
+  font-size: 1.3rem;
+  color: #a1a7ac;
+}
+
+.appointment-form #form :-ms-input-placeholder {
+  font-size: 1.3rem;
+  color: #a1a7ac;
+}
+
+.appointment-form #form ::-ms-input-placeholder {
+  font-size: 1.3rem;
+  color: #a1a7ac;
+}
+
+.appointment-form #form ::placeholder {
+  font-size: 1.3rem;
+  color: #a1a7ac;
+}
+
+.appointment-form #form .form-group1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.appointment-form #form button {
+  margin-top: 3rem;
+  justify-self: flex-start;
+}
+
+.services-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden !important;
+}
+
+.services-page .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.services-page .item-bg {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  left: -30px;
+}
+
+.services-page .item-bg.active {
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.services-page .news-slider {
+  z-index: 2;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1300px) {
+  .services-page .news-slider {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news-slider {
+    margin-top: 45px;
+  }
+}
+
+.services-page .news-slider__wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.services-page .news-slider__item {
+  width: 400px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .services-page .news-slider__item {
+    width: 340px;
+  }
+}
+
+.services-page .news-slider__item.swiper-slide {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.services-page .news-slider__item.swiper-slide-active, .services-page .news-slider__item.swiper-slide-prev, .services-page .news-slider__item.swiper-slide-next {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.services-page .news-slider__ctr {
+  position: relative;
+  z-index: 12;
+}
+
+.services-page .news-slider__arrow {
+  background: #fff;
+  border: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  z-index: 12;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.services-page .news-slider__arrow:focus {
+  outline: none !important;
+}
+
+.services-page .news-slider__arrow .icon-font {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.services-page .news-slider__arrow.news-slider-prev {
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.services-page .news-slider__arrow.news-slider-next {
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.services-page .news-slider__pagination {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.services-page .news-slider__pagination .swiper-pagination-bullet {
+  width: 13px;
+  height: 10px;
+  display: inline-block;
+  background: black;
+  opacity: .2;
+  margin: 0 5px;
+  border-radius: 20px;
+  -webkit-transition: opacity .5s, background-color .5s, width .5s;
+  transition: opacity .5s, background-color .5s, width .5s;
+  -webkit-transition-delay: .5s, .5s, 0s;
+          transition-delay: .5s, .5s, 0s;
+}
+
+.services-page .news-slider__pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: black;
+  width: 100px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news-slider__pagination .swiper-pagination-bullet-active {
+    width: 70px;
+  }
+}
+
+.services-page .news__item {
+  padding: 40px;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@media screen and (min-width: 800px) {
+  .services-page .news__item:hover {
+    color: #222222;
+    -webkit-transition-delay: .1s;
+            transition-delay: .1s;
+  }
+  .services-page .news__item:hover .news-date,
+  .services-page .news__item:hover .news__title,
+  .services-page .news__item:hover .news__txt {
+    opacity: 1;
+    -webkit-transition-delay: .1s;
+            transition-delay: .1s;
+  }
+  .services-page .news__item:hover .news__img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.services-page .news__item.active {
+  color: #222222;
+}
+
+.services-page .news__item.active .news-date,
+.services-page .news__item.active .news__title,
+.services-page .news__item.active .news__txt {
+  opacity: 1;
+}
+
+.services-page .news__item.active .news__img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 992px) {
+  .services-page .news__item {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news__item {
+    padding: 20px;
+  }
+}
+
+.services-page .news-date {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid;
+  display: inline-block;
+  opacity: .7;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news-date {
+    margin-bottom: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0;
+  }
+}
+
+.services-page .news-date__title {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news-date__title {
+    margin-right: 10px;
+  }
+}
+
+.services-page .news-date__txt {
+  font-size: 16px;
+}
+
+.services-page .news__title {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: .7;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+.services-page .news__txt {
+  margin: 10px 0;
+  line-height: 1.6em;
+  font-size: 15px;
+  opacity: .7;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.services-page .news__img {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 6px 26px 6px rgba(0, 0, 0, 0.25);
+  height: 200px;
+  margin-top: 30px;
+  width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+@media screen and (max-width: 576px) {
+  .services-page .news__img {
+    height: 180px;
+    margin-top: 20px;
+  }
+}
+
+.services-page .news__img img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.location-page {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  margin: 0 15rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.location-page h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 4.5rem;
+  display: inline;
+}
+
+.location-page .location-description {
+  width: 50%;
+  justify-self: flex-start;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.location-page .location-description .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  vertical-align: center;
+}
+
+.location-page .location-description .contacts div:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.location-page .location-description .contacts div {
+  color: #6E9241;
+  vertical-align: center;
+  display: inline-block;
+}
+
+.location-page .location-description .contacts div a {
+  font-family: "Exo 2", sans-serif;
+  color: black;
+  margin-left: 2rem;
+}
+
+.location-page .location-description img {
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%;
+}
+
+.location-page .map {
+  height: 60rem;
+  width: 50%;
+  width: 50%;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
+}
+
+.testimonial-box {
+  display: inline-block;
+  width: 33%;
+  padding: 20px 30px;
+}
+
+.testimonial-content {
+  background: #FFF;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.testimonial-author img {
+  float: left;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+.testimonial-author h5 {
+  font-size: 18px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.testimonial-author span {
+  font-size: 14px;
+}
+
+.site-section {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.site-section-secondary {
+  background: #EFEFEF;
+}
+
+.site-section-inside {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #777;
+}
+
+#footer {
+  color: #F2F3F4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -webkit-gradient(linear, left top, right top, from(#191A4E), color-stop(30%, #191A4E), to(#F2f3f4));
+  background: linear-gradient(90deg, #191A4E, #191A4E 30%, #F2f3f4 100%);
+}
+
+#footer ul {
+  margin-bottom: 0;
+}
+
+#footer ul li {
+  display: inline;
+  margin: 0rem 3rem;
+}
+
+#footer ul li a {
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+#footer ul li a:hover {
+  color: #6E9241;
+}
+
+#footer div {
+  font-size: 2rem;
+  color: black;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+#footer div:hover {
+  color: #6e9241;
+}
+
+#footer div a {
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2rem;
+}
+
+#footer div a:hover {
+  color: #6e9241;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  html {
+    font-size: 6px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .background .navbarr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0;
+  }
+  header .background .navbarr .logo {
+    display: inline-block;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  header .background .navbarr .logo::after {
+    font-size: 1.8rem;
+  }
+  header .background .navbarr .sm-list1 a {
+    font-size: 3.5rem;
+  }
+  header .background .navbarr .telephone1 {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+  }
+  header .background .navbarr .telephone1 a {
+    font-size: 3rem;
+  }
+  header .background .first-page {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .background .first-page .doctor-name {
+    margin-top: 5rem;
+  }
+  header .background .first-page h1 {
+    margin-left: 5rem;
+    justify-self: flex-start;
+    font-size: 3rem;
+  }
+  header .background .first-page p {
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  header .background .first-page .btn-maa {
+    margin-left: 5rem;
+    padding: 1rem 1rem;
+  }
+  header .background .first-page .btn-maa a {
+    display: inline-block;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item .menu-nav-link {
+    width: 100%;
+  }
+  main .background-2 .background-2-item {
+    background-position: 53%;
+  }
+  main .second-page {
+    padding: 0 5rem;
+  }
+  main .appointment-page .appointment-form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .appointment-page .appointment-form .appointment-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  main .appointment-page .appointment-form .telephone {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form {
+    width: 80%;
+    margin: 0 0;
+    padding: 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .appointment-page .appointment-form #form ::-webkit-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form :-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form .form-control {
+    font-size: 1.9rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  main .appointment-page .appointment-form #form select {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+  }
+  main .appointment-page .appointment-form #form button {
+    margin: 0 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

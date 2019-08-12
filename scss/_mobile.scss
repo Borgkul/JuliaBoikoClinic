@@ -1,0 +1,203 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@include mediaXL {
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@include mediaL {
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@include mediaM {
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@include mediaML {
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@include mediaS {
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@include mediaXS {
+  html {
+    font-size: 6px;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    .background {
+      // justify-content: flex-start;
+
+      .menu-btn {
+      }
+
+      .navbarr {
+        flex-direction: column;
+        padding: 0 0;
+
+        .logo {
+          display: inline-block;
+          width: 100%;
+          align-items: center;
+          justify-self: center;
+
+          &::after {
+            font-size: 1.8rem;
+          }
+        }
+
+        .sm-list1 {
+          a {
+            font-size: 3.5rem;
+          }
+        }
+
+        .telephone1 {
+          flex-basis: 10rem;
+
+          a {
+            font-size: 3rem;
+          }
+        }
+      }
+
+      .first-page {
+        margin-left: 0;
+        width: 100%;
+        align-items: flex-start;
+
+        .doctor-name {
+          margin-top: 5rem;
+        }
+
+        h1 {
+          margin-left: 5rem;
+          justify-self: flex-start;
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 2rem;
+          margin-left: 5rem;
+        }
+
+        .btn-maa {
+          // height: 7.5%;
+          margin-left: 5rem;
+          padding: 1rem 1rem;
+
+          a {
+            display: inline-block;
+            text-align: center;
+          }
+        }
+      }
+
+      .menu-nav {
+        .menu-nav-list {
+          align-items: center;
+          flex-wrap: wrap;
+
+          .menu-nav-item {
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+
+            .menu-nav-link {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .background-2 {
+      .background-2-item {
+        background-position: 53%;
+      }
+    }
+
+    .second-page {
+      padding: 0 5rem;
+    }
+
+    .appointment-page {
+      .appointment-form {
+        justify-content: center;
+        width: 100%;
+        margin: 0 0rem;
+        flex-direction: column;
+        .appointment-info {
+          align-self: center;
+          padding: 0;
+          text-align: center;
+          margin: 0;
+          margin-top: 3rem;
+        }
+
+        .telephone {
+          font-size: 1.9rem;
+        }
+        #form {
+          width: 80%;
+          // flex-grow: 2;
+          margin: 0 0;
+          padding: 0 0;
+          flex-wrap: wrap;
+          align-self: center;
+
+          ::placeholder {
+            font-size: 1.9rem;
+          }
+          .form-control {
+            font-size: 1.9rem;
+            font-family: "Exo 2", sans-serif;
+          }
+
+          select {
+            font-family: "Exo 2", sans-serif;
+            font-size: 1.9rem;
+            letter-spacing: 0.05rem;
+            font-weight: 200;
+          }
+
+          button {
+            margin: 0 0;
+          }
+        }
+      }
+    }
+  }
+}

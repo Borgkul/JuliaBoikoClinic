@@ -87,10 +87,10 @@
             <div class="background-2-item"></div>
         </div>
 
-
+        <div class="second-page-container">
         <div class="second-page" data-aos="fade-down" id="doctor" data-aos-duration="2000">
             <div class="portrait">
-                <!-- <img src="img/doctor.png" alt="doctor" data-aos="fade-right" data-aos-duration="1500" class="doctor"> -->
+                <img src="img/doctor.png" alt="doctor" data-aos="fade-right" data-aos-duration="1500" class="doctor">
             </div>
             <div class="full-description" data-aos="flip-left" data-aos-duration="1500">
                 <h1>Встреть своего доктора!</h1>
@@ -98,16 +98,13 @@
                     officia, aperiam
                     excepturi ipsa animi minus aspernatur nihil iure maxime adipisci ipsam quidem pariatur deleniti
                     rem
-                    laborum placeat? Sint natus quis unde saepe incidunt vel, qui consequatur quae voluptatem
-                    assumenda
-                    aliquid quos eligendi beatae magni laborum vitae cumque animi temporibus repellendus hic numquam
-                    corrupti? Est aliquam, exercitationem iusto, corrupti nesciunt non officia nulla veniam ullam
-                    accusamus quo quia alias pariatur itaque iste inventore tenetur placeat earum asperiores! Ipsum,
-                    perspiciatis possimus est asperiores explicabo dignissimos autem. Ullam voluptas excepturi amet,
-                    fugit hic dolore, in vero adipisci maiores magnam eius rem accusamus?</p>
+                    laborum placeat? Sint natus quis unde saepe incidunt vel, qui consequatur
+                
+            </p>
             </div>
 
         </div>
+    </div>
         <div id="appointment"></div>
         <div class="appointment-page" data-aos="zoom-in" data-aos-duration="2300">
             <div class="appointment-form">
@@ -131,13 +128,13 @@
 
                     <input type="text" class="form-control" id="inlineFormInput" placeholder="Имя и фамилия" type="text" name="name" required>
 
-                    <input class="form-control" type="tel" placeholder="Телефон" id="example-tel-input" required>
+                    <input class="form-control" type="tel" placeholder="Телефон" id="example-tel-input" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
 
                     <input type='text' class="datepicker-here form-control" data-position="top center"
-                        placeholder="Выберите дату визита">
+                        placeholder="Выберите дату визита" name="date-of-visit">
 
                     <div class="form-group">
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select class="form-control" id="exampleFormControlSelect1" name="type-of-service">
                             <option value="" disabled selected class="unselected-option">Выберите услугу</option>
                             <option>Ортодонтия</option>
                             <option>Отбеливание</option>
@@ -172,7 +169,7 @@
 
             <div class="wrapper" data-aos="flip-down" data-aos-duration="1600">
 
-                <div class="item-bg"></div>
+                <!-- <div class="item-bg"></div> -->
 
                 <div class="news-slider">
                     <div class="news-slider__wrp swiper-wrapper">

@@ -165,7 +165,7 @@ tl.fromTo(background, 1.5, {
 }, {
     width: '64%',
     ease: Power2.easeInOut
-}, "+=2.5").fromTo(background2, 1.5, {
+}, "+=2").fromTo(background2, 1.5, {
     height: '0'
 }, {
     height: '100vh',

@@ -90,7 +90,7 @@
 
         <div class="second-page" data-aos="fade-down" id="doctor" data-aos-duration="2000">
             <div class="portrait">
-                <img src="img/doctor.png" alt="doctor" data-aos="fade-right" data-aos-duration="1500" class="doctor">
+                <!-- <img src="img/doctor.png" alt="doctor" data-aos="fade-right" data-aos-duration="1500" class="doctor"> -->
             </div>
             <div class="full-description" data-aos="flip-left" data-aos-duration="1500">
                 <h1>Встреть своего доктора!</h1>
@@ -127,9 +127,9 @@
                     </div>
                 </div>
 
-                <form id="form" data-aos="flip-up" data-aos-duration="2000">
+                <form id="form" data-aos="flip-up" data-aos-duration="2000" name="contact" method="POST" data-netlify="true">
 
-                    <input type="text" class="form-control" id="inlineFormInput" placeholder="Имя и фамилия" required>
+                    <input type="text" class="form-control" id="inlineFormInput" placeholder="Имя и фамилия" type="text" name="name" required>
 
                     <input class="form-control" type="tel" placeholder="Телефон" id="example-tel-input" required>
 
@@ -151,7 +151,7 @@
                     </div>
                     <div class="form-group1">
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Дополнительные комментарии..."></textarea>
+                            placeholder="Дополнительные комментарии..." name="message"></textarea>
                     </div>
                     <button type="submit">Отправить</button>
                 </form>

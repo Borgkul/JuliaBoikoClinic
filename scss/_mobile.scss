@@ -1045,6 +1045,8 @@
     }
   }
 
+
+
   main {
     .background-2 {
       .background-2-item {
@@ -1078,6 +1080,8 @@
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 5rem;
+        flex-wrap: wrap;
+        height: 30vh;
 
         h1 {
           margin: 0 0;
@@ -1105,11 +1109,16 @@
           padding: 0;
           text-align: center;
           margin: 0;
-          margin-top: 3rem;
+          margin-top: 0rem;
+
+          h1 {
+            margin: 0;
+          }
         }
 
         .telephone {
           font-size: 1.9rem;
+          margin: 0;
         }
 
         #form {
@@ -1117,7 +1126,7 @@
           // flex-grow: 2;
           margin: 0 0;
           padding: 0 0;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
           align-self: center;
 
           ::placeholder {

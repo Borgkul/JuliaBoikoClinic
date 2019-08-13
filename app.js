@@ -150,5 +150,26 @@ swiper.on('slideChangeTransitionEnd', function () {
     bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
 });
 
-// testemonial
+// animation
 
+const background = document.querySelector('.background');
+const background2 = document.querySelector('.background-2-item')
+const navbarr = document.querySelector('.navbarr');
+
+const doctorPhoto = document.querySelector('.doctor');
+
+const tl = new TimelineMax();
+
+tl.fromTo(background, 1.5, {
+    width: '0'
+}, {
+    width: '64%',
+    ease: Power2.easeInOut
+}, "+=0.7").fromTo(background2, 1.5, {
+    height: '0'
+}, {
+    height: '100vh',
+    ease: Power2.easeInOut
+});
+
+AOS.init();

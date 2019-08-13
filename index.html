@@ -15,9 +15,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="bower_components/air-datepicker/dist/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="scss/main.css">
-
-
     <title>Клиника Юлии Бойко</title>
 </head>
 
@@ -55,7 +54,7 @@
             <div class="menu-nav">
                 <ul class="menu-nav-list">
                     <li class="menu-nav-item"><a href="#doctor" class="menu-nav-link">Познакомься с врачом</a></li>
-                    <li class="menu-nav-item"><a href="#appoinment" class="menu-nav-link">Запишись на прием</a></li>
+                    <li class="menu-nav-item"><a href="#appointment" class="menu-nav-link">Запишись на прием</a></li>
                     <li class="menu-nav-item"><a href="#services" class="menu-nav-link">Наши услуги</a></li>
                     <li class="menu-nav-item"><a href="#location" class="menu-nav-link">Где мы находимся?</a></li>
                     <li class="menu-nav-item"><a href="#testimonials" class="menu-nav-link">Отзывы</a></li>
@@ -89,13 +88,14 @@
         </div>
 
 
-        <div class="second-page" id="doctor">
+        <div class="second-page" data-aos="fade-down" id="doctor" data-aos-duration="2000">
             <div class="portrait">
-                <img src="img/doctor.png" alt="doctor" class="doctor">
+                <img src="img/doctor.png" alt="doctor" data-aos="fade-right" data-aos-duration="1500" class="doctor">
             </div>
-            <div class="full-description">
+            <div class="full-description" data-aos="flip-left" data-aos-duration="1500">
                 <h1>Встреть своего доктора!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae officia, aperiam
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus molestiae
+                    officia, aperiam
                     excepturi ipsa animi minus aspernatur nihil iure maxime adipisci ipsam quidem pariatur deleniti
                     rem
                     laborum placeat? Sint natus quis unde saepe incidunt vel, qui consequatur quae voluptatem
@@ -108,7 +108,8 @@
             </div>
 
         </div>
-        <div class="appointment-page">
+        <div id="appointment"></div>
+        <div class="appointment-page" data-aos="zoom-in" data-aos-duration="2300">
             <div class="appointment-form">
                 <div class="appointment-info">
                     <h1 class="name-of-form">Запишись на прием</h1>
@@ -126,7 +127,7 @@
                     </div>
                 </div>
 
-                <form id="form">
+                <form id="form" data-aos="flip-up" data-aos-duration="2000">
 
                     <input type="text" class="form-control" id="inlineFormInput" placeholder="Имя и фамилия" required>
 
@@ -158,11 +159,8 @@
             </div>
             <div class="jumbotron-services">
                 <h1 class="display-4">Мои услуги</h1>
-                <p class="lead">Каждому из нас, безусловно, приходилось неоднократно обращаться к стоматологу. И
-                    всем
-                    знакомо ощущение страха, возникающее как только приходит время отправляться на прием к доктору.
-                    Но
-                    технологии в области стоматологии не стоят на месте, развиваются интенсивно, и сегодня возможно
+                <p class="lead">Технологии в области стоматологии не стоят на месте, развиваются интенсивно, и сегодня
+                    возможно
                     абсолютно безболезненно решить любую проблему, связанную с лечением, восстановлением,
                     протезированием зубов. Это чрезвычайно важно, поскольку красивая улыбка, позволяющая увидеть ряд
                     ослепительно белых, ровных, здоровых зубов, не только располагает к Вам собеседника, но и
@@ -170,9 +168,9 @@
             </div>
         </div>
 
-        <div class="services-page">
+        <div class="services-page" id="services">
 
-            <div class="wrapper">
+            <div class="wrapper" data-aos="flip-down" data-aos-duration="1600">
 
                 <div class="item-bg"></div>
 
@@ -318,7 +316,7 @@
             </svg>
         </div>
 
-        <div class="location-page">
+        <div class="location-page" id="location" data-aos="zoom-in-down" data-aos-duration="1500">
             <h1 class="our-location">Где мы находимся?</h1>
             <div class="location-description">
                 <img src="./img/voznesensk.jpeg" alt="Voznesensk">
@@ -339,14 +337,15 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.072593394207!2d31.334737515682324!3d47.56637597918204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cf77d37927cf7f%3A0x434278ed28b4fa8!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgMTAsINCS0L7Qt9C90LXRgdC10L3RgdC6LCDQndC40LrQvtC70LDQtdCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDU2NTAw!5e0!3m2!1sru!2sua!4v1565619143171!5m2!1sru!2sua"
                 class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="site-section site-section-secondary">
+        <div class="site-section site-section-secondary" id="testimonials" data-aos="flip-down"
+            data-aos-duration="2000">
             <div class="site-section-inside">
 
                 <div class="section-header">
                     <h2>Отзывы клиентов</h2>
                 </div>
 
-                <div class="testimonial-box">
+                <div class="testimonial-box" data-aos="fade-right" data-aos-duration="2500">
                     <div class="testimonial-content">
                         Все зубки ровненькие и на месте. Спасибо!!!
                     </div>
@@ -356,7 +355,7 @@
                     </div>
                 </div>
 
-                <div class="testimonial-box">
+                <div class="testimonial-box" data-aos="fade-right" data-aos-duration="2500">
                     <div class="testimonial-content">
                         Отличный сервис. Каеф!!!
                     </div>
@@ -366,7 +365,7 @@
                     </div>
                 </div>
 
-                <div class="testimonial-box">
+                <div class="testimonial-box" data-aos="fade-right" data-aos-duration="2500">
                     <div class="testimonial-content">
                         Лучшая клиника из всех. Супер!
                     </div>
@@ -391,16 +390,23 @@
             <a href="mailto:juliaboiko@gmail.com">juliaboiko@gmail.com</a>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./bower_components/swiper/dist/js/swiper.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+
     <script src="app.js"></script>
 </body>
 

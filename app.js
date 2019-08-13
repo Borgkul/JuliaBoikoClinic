@@ -26,7 +26,7 @@ function toggleMenu() {
 
 //carousel
 
-// var bg = document.querySelector('.item-bg');
+var bg = document.querySelector('.item-bg');
 var items = document.querySelectorAll('.news__item');
 var item = document.querySelector('.news__item');
 
@@ -45,18 +45,18 @@ if ($(window).width() > 800) {
                 var width = this.getBoundingClientRect().width;
                 var height = this.getBoundingClientRect().height;
 
-                // $('.item-bg').addClass('active');
+                $('.item-bg').addClass('active');
                 $('.news__item').removeClass('active');
-                // $('.news__item').removeClass('active');
+                $('.news__item').removeClass('active');
 
 
-                // bg.style.width = width + 'px';
-                // bg.style.height = height + 'px';
-                // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+                bg.style.width = width + 'px';
+                bg.style.height = height + 'px';
+                bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
             });
 
             element.addEventListener('mouseleave', function () {
-                // $('.item-bg').removeClass('active');
+                $('.item-bg').removeClass('active');
                 $('.news__item').removeClass('active');
             });
 
@@ -111,11 +111,11 @@ var swiper = new Swiper('.news-slider', {
             var height = sliderItem.getBoundingClientRect().height;
 
 
-            // $('.item-bg').addClass('active');
+            $('.item-bg').addClass('active');
 
-            // bg.style.width = width + 'px';
-            // bg.style.height = height + 'px';
-            // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+            bg.style.width = width + 'px';
+            bg.style.height = height + 'px';
+            bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
         }
     }
 });
@@ -143,11 +143,11 @@ swiper.on('slideChangeTransitionEnd', function () {
     var height = sliderItem.getBoundingClientRect().height;
 
 
-    // $('.item-bg').addClass('active');
+    $('.item-bg').addClass('active');
 
-    // bg.style.width = width + 'px';
-    // bg.style.height = height + 'px';
-    // bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
+    bg.style.width = width + 'px';
+    bg.style.height = height + 'px';
+    bg.style.transform = 'translateX(' + x + 'px ) translateY(' + y + 'px)';
 });
 
 // animation

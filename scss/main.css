@@ -567,6 +567,7 @@ header {
 }
 
 .second-page .full-description {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

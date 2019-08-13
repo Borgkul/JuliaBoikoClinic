@@ -562,7 +562,6 @@ header {
 
 .second-page .full-description {
   width: 50%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1219,7 +1218,8 @@ header {
 
 .testimonial-author img {
   float: left;
-  width: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-right: 15px;
   vertical-align: middle;
@@ -1330,22 +1330,1190 @@ header {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) {
+  html {
+    font-size: 10px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .background .menu-nav .menu-nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item .menu-nav-link {
+    width: 100%;
+  }
+  main .background-2 .background-2-item {
+    background-position: 53%;
+  }
+  main .second-page {
+    padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .second-page .full-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    margin: 0 0;
+    grid-gap: 3rem;
+  }
+  main .second-page .full-description h1 {
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #efefef), to(white));
+    background: linear-gradient(#efefef 70%, white 100%);
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-author {
+    margin: 0 0;
+  }
+  #footer {
+    display: none;
+  }
+}
+
 /* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
   */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    font-size: 9.5px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .background .navbarr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0;
+  }
+  header .background .navbarr .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-self: center;
+  }
+  header .background .navbarr .logo::after {
+    font-size: 1.8rem;
+  }
+  header .background .navbarr .sm-list1 a {
+    font-size: 3.5rem;
+  }
+  header .background .navbarr .telephone1 {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+  }
+  header .background .navbarr .telephone1 a {
+    font-size: 3rem;
+  }
+  header .background .first-page {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .background .first-page .doctor-name {
+    margin-top: 5rem;
+  }
+  header .background .first-page h1 {
+    margin-left: 5rem;
+    justify-self: flex-start;
+    font-size: 3rem;
+  }
+  header .background .first-page p {
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  header .background .first-page .btn-maa {
+    margin-left: 5rem;
+    padding: 1rem 1rem;
+  }
+  header .background .first-page .btn-maa a {
+    display: inline-block;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item .menu-nav-link {
+    width: 100%;
+  }
+  main .background-2 .background-2-item {
+    background-position: 53%;
+  }
+  main .second-page {
+    padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .second-page .full-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    margin: 0 0;
+    grid-gap: 3rem;
+  }
+  main .second-page .full-description h1 {
+    margin: 0 0;
+  }
+  main .appointment-page .jumbotron-services {
+    display: -ms-grid;
+    display: grid;
+    margin: 0 0;
+    margin-top: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+  }
+  main .appointment-page .jumbotron-services h1 {
+    margin: 0 0;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 0 0;
+  }
+  main .appointment-page .jumbotron-services p {
+    margin: 0 0rem;
+    font-size: 1.75rem;
+  }
+  main .appointment-page .appointment-form {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #191a4e), to(#fff));
+    background: linear-gradient(#191a4e 10%, #fff 100%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .appointment-page .appointment-form .appointment-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  main .appointment-page .appointment-form .telephone {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form {
+    width: 80%;
+    margin: 0 0;
+    padding: 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .appointment-page .appointment-form #form ::-webkit-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form :-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form .form-control {
+    font-size: 1.9rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  main .appointment-page .appointment-form #form select {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+  }
+  main .appointment-page .appointment-form #form button {
+    margin: 0 0;
+  }
+  main .location-page {
+    margin: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30rem;
+  }
+  main .location-page h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  main .location-page .location-description {
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .location-page .location-description img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .location-page .location-description .contacts {
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 1.8rem;
+  }
+  main .location-page .location-description .contacts .fa-map-marker-alt {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .location-page .location-description .contacts h2 {
+    font-size: 4.5rem;
+  }
+  main .location-page .map {
+    display: none;
+  }
+  main .site-section.site-section-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #efefef), to(white));
+    background: linear-gradient(#efefef 70%, white 100%);
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-author {
+    margin: 0 0;
+  }
+  #footer {
+    display: none;
+  }
+}
+
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 8.5px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .background .navbarr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0;
+  }
+  header .background .navbarr .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-self: center;
+  }
+  header .background .navbarr .logo::after {
+    font-size: 1.8rem;
+  }
+  header .background .navbarr .sm-list1 a {
+    font-size: 3.5rem;
+  }
+  header .background .navbarr .telephone1 {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+  }
+  header .background .navbarr .telephone1 a {
+    font-size: 3rem;
+  }
+  header .background .first-page {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .background .first-page .doctor-name {
+    margin-top: 5rem;
+  }
+  header .background .first-page h1 {
+    margin-left: 5rem;
+    justify-self: flex-start;
+    font-size: 3rem;
+  }
+  header .background .first-page p {
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  header .background .first-page .btn-maa {
+    margin-left: 5rem;
+    padding: 1rem 1rem;
+  }
+  header .background .first-page .btn-maa a {
+    display: inline-block;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item .menu-nav-link {
+    width: 100%;
+  }
+  main .background-2 .background-2-item {
+    background-position: 53%;
+  }
+  main .second-page {
+    padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .second-page .full-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    margin: 0 0;
+    grid-gap: 3rem;
+  }
+  main .second-page .full-description h1 {
+    margin: 0 0;
+  }
+  main .appointment-page .jumbotron-services {
+    display: -ms-grid;
+    display: grid;
+    margin: 0 0;
+    margin-top: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+  }
+  main .appointment-page .jumbotron-services h1 {
+    margin: 0 0;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 0 0;
+  }
+  main .appointment-page .jumbotron-services p {
+    margin: 0 0rem;
+    font-size: 1.75rem;
+  }
+  main .appointment-page .appointment-form {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #191a4e), to(#fff));
+    background: linear-gradient(#191a4e 10%, #fff 100%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .appointment-page .appointment-form .appointment-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  main .appointment-page .appointment-form .telephone {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form {
+    width: 80%;
+    margin: 0 0;
+    padding: 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .appointment-page .appointment-form #form ::-webkit-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form :-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form .form-control {
+    font-size: 1.9rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  main .appointment-page .appointment-form #form select {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+  }
+  main .appointment-page .appointment-form #form button {
+    margin: 0 0;
+  }
+  main .location-page {
+    margin: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30rem;
+  }
+  main .location-page h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  main .location-page .location-description {
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .location-page .location-description img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .location-page .location-description .contacts {
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 1.8rem;
+  }
+  main .location-page .location-description .contacts .fa-map-marker-alt {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .location-page .location-description .contacts h2 {
+    font-size: 4.5rem;
+  }
+  main .location-page .map {
+    display: none;
+  }
+  main .site-section.site-section-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #efefef), to(white));
+    background: linear-gradient(#efefef 70%, white 100%);
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-author {
+    margin: 0 0;
+  }
+  .services-page {
+    height: 53vh;
+  }
+  #footer {
+    display: none;
+  }
+}
+
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 8.5px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .background .navbarr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0;
+  }
+  header .background .navbarr .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-self: center;
+  }
+  header .background .navbarr .logo::after {
+    font-size: 1.8rem;
+  }
+  header .background .navbarr .sm-list1 a {
+    font-size: 3.5rem;
+  }
+  header .background .navbarr .telephone1 {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+  }
+  header .background .navbarr .telephone1 a {
+    font-size: 3rem;
+  }
+  header .background .first-page {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .background .first-page .doctor-name {
+    margin-top: 5rem;
+  }
+  header .background .first-page h1 {
+    margin-left: 5rem;
+    justify-self: flex-start;
+    font-size: 3rem;
+  }
+  header .background .first-page p {
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  header .background .first-page .btn-maa {
+    margin-left: 5rem;
+    padding: 1rem 1rem;
+  }
+  header .background .first-page .btn-maa a {
+    display: inline-block;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item .menu-nav-link {
+    width: 100%;
+  }
+  main .background-2 .background-2-item {
+    background-position: 53%;
+  }
+  main .second-page {
+    padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .second-page .full-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    margin: 0 0;
+    grid-gap: 3rem;
+  }
+  main .second-page .full-description h1 {
+    margin: 0 0;
+  }
+  main .services-page {
+    height: 53vh;
+  }
+  main .appointment-page .jumbotron-services {
+    display: -ms-grid;
+    display: grid;
+    margin: 0 0;
+    margin-top: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+  }
+  main .appointment-page .jumbotron-services h1 {
+    margin: 0 0;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 0 0;
+  }
+  main .appointment-page .jumbotron-services p {
+    margin: 0 0rem;
+    font-size: 1.75rem;
+  }
+  main .appointment-page .appointment-form {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #191a4e), to(#fff));
+    background: linear-gradient(#191a4e 10%, #fff 100%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .appointment-page .appointment-form .appointment-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  main .appointment-page .appointment-form .telephone {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form {
+    width: 80%;
+    margin: 0 0;
+    padding: 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .appointment-page .appointment-form #form ::-webkit-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form :-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form .form-control {
+    font-size: 1.9rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  main .appointment-page .appointment-form #form select {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+  }
+  main .appointment-page .appointment-form #form button {
+    margin: 0 0;
+  }
+  main .location-page {
+    margin: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30rem;
+  }
+  main .location-page h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  main .location-page .location-description {
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .location-page .location-description img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .location-page .location-description .contacts {
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 1.8rem;
+  }
+  main .location-page .location-description .contacts .fa-map-marker-alt {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .location-page .location-description .contacts h2 {
+    font-size: 4.5rem;
+  }
+  main .location-page .map {
+    display: none;
+  }
+  main .site-section.site-section-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #efefef), to(white));
+    background: linear-gradient(#efefef 70%, white 100%);
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-author {
+    margin: 0 0;
+  }
+  #footer {
+    display: none;
+  }
+}
+
 /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 7.5px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header .background .navbarr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0;
+  }
+  header .background .navbarr .logo {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-self: center;
+  }
+  header .background .navbarr .logo::after {
+    font-size: 1.8rem;
+  }
+  header .background .navbarr .sm-list1 a {
+    font-size: 3.5rem;
+  }
+  header .background .navbarr .telephone1 {
+    -ms-flex-preferred-size: 10rem;
+        flex-basis: 10rem;
+  }
+  header .background .navbarr .telephone1 a {
+    font-size: 3rem;
+  }
+  header .background .first-page {
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  header .background .first-page .doctor-name {
+    margin-top: 5rem;
+  }
+  header .background .first-page h1 {
+    margin-left: 5rem;
+    justify-self: flex-start;
+    font-size: 3rem;
+  }
+  header .background .first-page p {
+    font-size: 2rem;
+    margin-left: 5rem;
+  }
+  header .background .first-page .btn-maa {
+    margin-left: 5rem;
+    padding: 1rem 1rem;
+  }
+  header .background .first-page .btn-maa a {
+    display: inline-block;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  header .background .menu-nav .menu-nav-list .menu-nav-item .menu-nav-link {
+    width: 100%;
+  }
+  main .background-2 .background-2-item {
+    background-position: 53%;
+  }
+  main .second-page {
+    padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .second-page .full-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: center;
+    margin: 0 0;
+    grid-gap: 3rem;
+  }
+  main .second-page .full-description h1 {
+    margin: 0 0;
+  }
+  main .appointment-page .jumbotron-services {
+    display: -ms-grid;
+    display: grid;
+    margin: 0 0;
+    margin-top: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+  }
+  main .appointment-page .jumbotron-services h1 {
+    margin: 0 0;
+    justify-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 0 0;
+  }
+  main .appointment-page .jumbotron-services p {
+    margin: 0 0rem;
+    font-size: 1.75rem;
+  }
+  main .appointment-page .appointment-form {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #191a4e), to(#fff));
+    background: linear-gradient(#191a4e 10%, #fff 100%);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin: 0 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .appointment-page .appointment-form .appointment-info {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 3rem;
+  }
+  main .appointment-page .appointment-form .telephone {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form {
+    width: 80%;
+    margin: 0 0;
+    padding: 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .appointment-page .appointment-form #form ::-webkit-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form :-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::-ms-input-placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form ::placeholder {
+    font-size: 1.9rem;
+  }
+  main .appointment-page .appointment-form #form .form-control {
+    font-size: 1.9rem;
+    font-family: "Exo 2", sans-serif;
+  }
+  main .appointment-page .appointment-form #form select {
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.05rem;
+    font-weight: 200;
+  }
+  main .appointment-page .appointment-form #form button {
+    margin: 0 0;
+  }
+  main .location-page {
+    margin: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30rem;
+  }
+  main .location-page h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  main .location-page .location-description {
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .location-page .location-description img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .location-page .location-description .contacts {
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 1.8rem;
+  }
+  main .location-page .location-description .contacts .fa-map-marker-alt {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .location-page .location-description .contacts h2 {
+    font-size: 4.5rem;
+  }
+  main .location-page .map {
+    display: none;
+  }
+  main .site-section.site-section-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #efefef), to(white));
+    background: linear-gradient(#efefef 70%, white 100%);
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-author {
+    margin: 0 0;
+  }
+  #footer {
+    display: none;
+  }
+}
+
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
@@ -1437,7 +2605,20 @@ header {
   main .second-page {
     padding: 0 5rem;
   }
+  main .appointment-page .jumbotron-services {
+    margin: 0 0;
+    margin-top: 3rem;
+  }
+  main .appointment-page .jumbotron-services h1 {
+    margin: 0 0;
+  }
+  main .appointment-page .jumbotron-services p {
+    margin: 0 3rem;
+    font-size: 1.7rem;
+  }
   main .appointment-page .appointment-form {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #191a4e), to(#fff));
+    background: linear-gradient(#191a4e 10%, #fff 100%);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1494,6 +2675,78 @@ header {
   }
   main .appointment-page .appointment-form #form button {
     margin: 0 0;
+  }
+  main .location-page {
+    margin: 0 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-gap: 30rem;
+  }
+  main .location-page h1 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .location-page .location-description {
+    justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .location-page .location-description img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .location-page .location-description .contacts {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  main .location-page .location-description .contacts h2 {
+    font-size: 4.5rem;
+  }
+  main .location-page .map {
+    display: none;
+  }
+  main .site-section.site-section-secondary {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #efefef), to(white));
+    background: linear-gradient(#efefef 70%, white 100%);
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 3rem 0;
+    padding: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-content {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.8rem;
+    margin: 0 0;
+  }
+  main .site-section.site-section-secondary .site-section-inside .testimonial-box .testimonial-author {
+    margin: 0 0;
+  }
+  #footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

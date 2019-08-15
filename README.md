@@ -2,5 +2,5 @@
 
 dentist website
 
-[check it out](juliaboikoclinic.netlify.com)
+[check it out](http://juliaboikoclinic.netlify.com)
 

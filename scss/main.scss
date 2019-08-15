@@ -7,7 +7,12 @@
 
 .wrapper {
     overflow-x: hidden;
+}
 
+.wrapper-services {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 105vh;
 }
 
 html {
@@ -414,7 +419,8 @@ header {
         width: 50%;
         // height: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        // align-items: center;
         flex-direction: column;
         padding: 0 10%;
 
@@ -615,12 +621,16 @@ header {
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
 
+.wrapper-2 {
+    overflow-y: hidden !important;
+}
+
 .services-page {
     position: relative;
-    height: 100vh;
-    overflow: hidden !important;
+    height: auto;
 
     .icon {
+
         display: inline-block;
         width: 1em;
         height: 1em;
@@ -630,6 +640,7 @@ header {
     }
 
     .item-bg {
+
         width: 300px;
         height: 500px;
         position: absolute;
@@ -644,6 +655,7 @@ header {
         //transform: translateX(-50%);
 
         &.active {
+
             left: 0;
             top: 0;
             opacity: 1;
@@ -653,7 +665,9 @@ header {
 
     .news {
 
+
         &-slider {
+
             z-index: 2;
             max-width: 1300px;
             margin-left: auto;

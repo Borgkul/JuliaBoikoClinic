@@ -73,6 +73,12 @@ button {
   overflow-x: hidden;
 }
 
+.wrapper-services {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 105vh;
+}
+
 html {
   font-size: 10px;
 }
@@ -569,9 +575,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -804,10 +810,13 @@ header {
   justify-self: flex-start;
 }
 
+.wrapper-2 {
+  overflow-y: hidden !important;
+}
+
 .services-page {
   position: relative;
-  height: 100vh;
-  overflow: hidden !important;
+  height: auto;
 }
 
 .services-page .icon {
@@ -1957,7 +1966,7 @@ header {
     margin: 0 0;
   }
   .services-page {
-    height: 53vh;
+    height: 100%;
   }
   #footer {
     display: none;
@@ -2074,7 +2083,7 @@ header {
     margin: 0 0;
   }
   main .services-page {
-    height: 53vh;
+    height: 100%;
   }
   main .appointment-page .jumbotron-services {
     display: -ms-grid;
@@ -2535,6 +2544,12 @@ header {
     margin: 0;
     padding: 0;
   }
+  .wrapper-2 {
+    height: 100%;
+  }
+  .services-page {
+    height: 100%;
+  }
   header .background .navbarr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2612,6 +2627,21 @@ header {
   }
   main .second-page {
     padding: 0 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .full-description {
+    display: inline-block;
+  }
+  main .full-description h1 {
+    margin: 0 0 !important;
+    padding-bottom: 3rem !important;
+  }
+  main .wrapper-services {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 105vh;
   }
   main .appointment-page .jumbotron-services {
     margin: 0 0;

@@ -655,7 +655,7 @@
   }
 
   .services-page {
-    height: 53vh;
+    height: 100%;
   }
 
   #footer {
@@ -792,7 +792,7 @@
     }
 
     .services-page {
-      height: 53vh;
+      height: 100%;
     }
 
     .appointment-page {
@@ -1242,6 +1242,15 @@
     padding: 0;
   }
 
+  .wrapper-2 {
+    height: 100%;
+  }
+
+  .services-page {
+    height: 100%;
+    // overflow-y: hidden;
+  }
+
   header {
     .background {
       // justify-content: flex-start;
@@ -1338,7 +1347,27 @@
 
     .second-page {
       padding: 0 5rem;
+      align-items: center;
+
+
     }
+
+    .full-description {
+      // align-items: center;
+      display: inline-block;
+
+      h1 {
+        margin: 0 0 !important;
+        padding-bottom: 3rem !important;
+      }
+    }
+
+    .wrapper-services {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      height: 105vh;
+    }
+
 
     .appointment-page {
       .jumbotron-services {
